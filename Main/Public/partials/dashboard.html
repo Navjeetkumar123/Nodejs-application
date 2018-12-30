@@ -1,0 +1,39 @@
+<div ng-controller="dashboardController">
+<div class="row" style="margin-top:20px;">
+<h3>Welcome BNYM!</h3>
+<div class=table-responsive>
+        	<table class="table table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Select all<br><input type="checkbox" ng-model="selectAll" ng-click="checkAll()"></th>
+			        <th>Deal ID</th>
+			        <th>Pledger</th>
+			        <th>Pledgee</th>
+			        <th>RQV</th>
+			        <th>Currency</th>
+			        <th>Margin Call Date</th>
+			        <th>Deal Status</th>
+			        <th>Allocation Status</th>
+			        <th>Last Successful Allocation Date</th>
+			       
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr ng-repeat="marginCall in marginCallList track by $index">
+				        <td><input type="checkbox" ng-hide="marginCall.allocationStatus != 'Ready for Allocation'" ng-model="marginCall.select"></td>
+				        <td>{{marginCall.dealId}}</td>
+				        <td>{{marginCall.pledger}}</td>
+				        <td>{{marginCall.pledgee}}</td>
+				        <td>{{marginCall.rqv}}</td>
+				        <td>{{marginCall.currency}}</td>
+				        <td>{{marginCall.marginCallDate}}</td>
+				        <td>{{marginCall.dealStatus}}</td>
+				        <td>{{marginCall.allocationStatus}}</td>
+				        <td>{{marginCall.last_allocationDate}}</td>
+				      </tr>
+    				</tbody>
+  			</table>
+       </div>
+       <button type="button"  class="btn btn-primary" ng-click="startAllocation(marginCall)">Begin Allocation</button>
+</div>
+  </div>     
