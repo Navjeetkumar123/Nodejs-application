@@ -1,0 +1,77 @@
+POST request Enroll on Org1  ...
+
+{"success":true,"secret":"","message":"Jim enrolled Successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTQzMjgzNDAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Im9yZzEiLCJpYXQiOjE1MTQyOTIzNDB9.u5UsEuKFKAkcxMtxD891HiAqIQZ0A3oU-TCvRvYOvI4"}
+
+ORG1 token is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTQzMjgzNDAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Im9yZzEiLCJpYXQiOjE1MTQyOTIzNDB9.u5UsEuKFKAkcxMtxD891HiAqIQZ0A3oU-TCvRvYOvI4
+
+
+POST request Create channel  ...
+
+{"success":true,"message":"Channel 'mychannel' created Successfully"}
+
+POST request Join channel on Org1
+
+{"success":true,"message":"Successfully joined peers in organization org1 to the channel 'mychannel'"}
+
+POST Install chaincode on Org1
+
+Successfully Installed chaincode on organization org1
+
+POST instantiate chaincode on peer1 of Org1
+
+Chaincode Instantiation is SUCCESS
+
+POST invoke chaincode on peers of Org1
+create a Product....
+
+Transacton ID is fc653b09c3c075e5ddbc0c7cc5e07778b89fb6df622bbc1aaac0dcbd8bd5b075
+
+Product created successfully
+GET query chaincode on peer1 of Org1
+
+{"prid":"PR1","supplier_name":"sup1","source_location_country":"EC","source_location_city":"IND","volume":"100","supplier_cost":"1000","supplier_load_date":"13/12/2017","transporter_name":"tr1","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"RGT","destination_location_city":"BG","destination_date":"16/12/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"}
+
+POST invoke chaincode on peers of Org1
+create a Product....
+
+Transacton ID is ce1c5ceff56e3a1062eedfe0768e2ccc1216cd48eded568ec8d327155e3a3d84
+
+Product created successfully
+GET query chaincode on peer1 of Org1
+
+{"prid":"PR2","supplier_name":"sup2","source_location_country":"EC","source_location_city":"IND","volume":"100","supplier_cost":"1000","supplier_load_date":"13/12/2017","transporter_name":"tr2","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"RGT","destination_location_city":"BG","destination_date":"16/12/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"}
+
+POST invoke chaincode on peers of Org1
+create a Product....
+
+Transacton ID is 4dff939e1a4fdb53ac7cd42e39469be879d3e2504b3ca9e23945da56a31a8ce8
+
+Product created successfully
+GET query chaincode on peer1 of Org1
+
+{"prid":"PR2","supplier_name":"sup2","source_location_country":"EC","source_location_city":"IND","volume":"100","supplier_cost":"1000","supplier_load_date":"13/12/2017","transporter_name":"tr2","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"RGT","destination_location_city":"BG","destination_date":"16/12/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"}
+
+update a Product....
+
+Transacton ID is 44a9d8a5a489646602dafc85201edc98a1341f943a5b453d1789d8f919bdfc8a
+
+updated the Product successfully
+GET query chaincode on peer1 of Org1
+
+{"prid":"PR1","supplier_name":"sup1","source_location_country":"DR","source_location_city":"IND","volume":"500","supplier_cost":"5000","supplier_load_date":"13/12/2017","transporter_name":"tr1","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"BG","destination_location_city":"RGT","destination_date":"16/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"}
+
+getting All Products....
+
+[{"prid":"PR1","supplier_name":"sup1","source_location_country":"DR","source_location_city":"IND","volume":"500","supplier_cost":"5000","supplier_load_date":"13/12/2017","transporter_name":"tr1","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"BG","destination_location_city":"RGT","destination_date":"16/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"},{"prid":"PR2","supplier_name":"sup2","source_location_country":"EC","source_location_city":"IND","volume":"100","supplier_cost":"1000","supplier_load_date":"13/12/2017","transporter_name":"tr2","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"RGT","destination_location_city":"BG","destination_date":"16/12/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"},{"prid":"PR3","supplier_name":"sup2","source_location_country":"DR","source_location_city":"IND","volume":"500","supplier_cost":"5000","supplier_load_date":"13/12/2017","transporter_name":"tr1","transporter_cost":"1000","container_load_date":"14/12/2017","load_port":"MU","container_discharge_date":"15/12/2017","discharge_port":"BY","destination_location_country":"RGT","destination_location_city":"BG","destination_date":"16/12/2017","product_status":"Standard","created_by":"cus1","updated_by":"cus1","last_update_timestamp":"12/12/2017"}]
+Fetched All Products....
+
+deleting a Product....
+Transacton ID is 1e49fddb18164a04d394250520abdd822de31fa69d3db9316ec037cf581d2f85
+deleted a Product
+
+
+GET query chaincode on peer1 of Org1
+Fetching a deleted Product by PRID
+Error: chaincode error (status: 500, message: {"PRID": "PR3", "Error":"Product does not exist."})
+
+Total execution time : 27 secs ...

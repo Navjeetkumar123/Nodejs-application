@@ -1,0 +1,142 @@
+POST request Enroll on Org1  ...
+
+{"success":true,"secret":"","message":"Jim enrolled Successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTQzMzAzNjUsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Im9yZzEiLCJpYXQiOjE1MTQyOTQzNjV9.YVuIvPjei4hFQXetvhdH4KOHwA0d-00LTL3p_4YBkps"}
+
+ORG1 token is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTQzMzAzNjUsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Im9yZzEiLCJpYXQiOjE1MTQyOTQzNjV9.YVuIvPjei4hFQXetvhdH4KOHwA0d-00LTL3p_4YBkps
+
+
+POST Install chaincode on Org1
+
+Successfully Installed chaincode on organization org1
+
+POST instantiate chaincode on peer1 of Org1
+
+Chaincode Instantiation is SUCCESS
+
+POST invoke chaincode on peers of Org1
+create Shipment....
+
+Transacton ID is 01aa5492e05752c3235b10c51dfa221269ce064f364213ee9ba03c14b949f2cf
+
+Shipment created successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"New","supplier_load_flag":"N","supplier_load_date":"NA","supplier_supporting_doc_name":"NA","supplier_load_quantity":"NA","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"","supplier_id":"","updated_by":"uni1","last_update_date":"18/12/2017"}
+
+POST invoke chaincode on peers of Org1
+create Shipment....
+
+Transacton ID is bb23f2e685215ce68eed1e6772b4dfee71cd5d847543b36a58919118e778b1df
+
+Shipment created successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH2","status":"New","supplier_load_flag":"N","supplier_load_date":"NA","supplier_supporting_doc_name":"NA","supplier_load_quantity":"NA","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"","supplier_id":"","updated_by":"uni1","last_update_date":"18/12/2017"}
+
+supplier status update....
+
+Transacton ID is 5f039ac5b31989464db41cc7455295827fcf11f67b4b0cc8f7b63c35917d1800
+
+supplier updated the shipment successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Container Loaded on Truck","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+Container arrival status update....
+
+Transacton ID is 1248a88ed4e9d3036eceafceaf3b59a779c6e3e6fe820d6554166a8c2e733f8d
+
+Container arrival status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Containers arrived at Source Port","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"NA","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+load to ship status update....
+
+Transacton ID is 1c1bd176d4c83933195610eac4d3fed4821d213ff703e7904e840fe5111f5062
+
+load to ship status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Container loaded on Ship","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+ship arrival status update....
+
+Transacton ID is 533ede20058ce4935faee69c50b4d5e695df19e25aa6942c40ae056b3fa46f19
+
+ship arrival status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Ship arrived at Target port","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+container offload status update....
+
+Transacton ID is 079d9c60b8b9f8797097243322e090658a5137ac5374a0fb5c03399c2717dbd1
+
+container offload status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Container offloaded at Target Port","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+bunkering ready status update....
+
+Transacton ID is b96b0b5572f7247985ca99c2214165fe109c6778cc28cedb11e99880d84b61fd
+
+bunkering ready status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Container ready for bunkering","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+bunkering complete status update....
+
+Transacton ID is 704541189dcc6e2b556575fb1256ae7617a8e4e2d3bc9669da17b4d8e9948af8
+
+bunkering complete status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Bunkering Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+customer handover status update....
+
+Transacton ID is 6c51c2c7927b021dd70f18d940789e31d95c759498c2082ca5ecc5213347c7f9
+
+customer handover status updated successfully
+GET query chaincode on peer1 of Org1
+
+{"shipment_id":"SH1","status":"Handover Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"Y","customer_handover_date":"26/12/2017","customer_handover_doc_name":"cus1Hnddoc","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+
+GET query chaincode on peer1 of Org1
+Getting shipment by user....
+
+[{"shipment_id":"SH1","status":"Handover Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"Y","customer_handover_date":"26/12/2017","customer_handover_doc_name":"cus1Hnddoc","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"},{"shipment_id":"SH2","status":"New","supplier_load_flag":"N","supplier_load_date":"NA","supplier_supporting_doc_name":"NA","supplier_load_quantity":"NA","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"","supplier_id":"","updated_by":"uni1","last_update_date":"18/12/2017"}]
+
+Fetched shipment details by user successfully
+GET query chaincode on peer1 of Org1
+Getting shipment by shipment_id
+
+{"shipment_id":"SH1","status":"Handover Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"Y","customer_handover_date":"26/12/2017","customer_handover_doc_name":"cus1Hnddoc","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"}
+fetched shipment by shipment_id successfully
+getting All Shipments....
+
+[{"shipment_id":"SH1","status":"Handover Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"Y","customer_handover_date":"26/12/2017","customer_handover_doc_name":"cus1Hnddoc","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"},{"shipment_id":"SH2","status":"New","supplier_load_flag":"N","supplier_load_date":"NA","supplier_supporting_doc_name":"NA","supplier_load_quantity":"NA","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"","supplier_id":"","updated_by":"uni1","last_update_date":"18/12/2017"}]
+Fetched All Shipments....
+
+geting Shipment By DRID....
+
+[{"shipment_id":"SH1","status":"Handover Completed","supplier_load_flag":"Y","supplier_load_date":"19/12/2017","supplier_supporting_doc_name":"Sup1Doc","supplier_load_quantity":"500","container_arrival_flag":"Y","container_arrival_date":"20/12/2017","container_arrival_doc_name":"con1doc","load_to_ship_flag":"Y","container_load_date":"21/12/2017","container_load_doc_name":"LTS1DOC","ship_arrival_flag":"Y","ship_arrival_date":"22/12/2017","ship_arrival_doc_name":"SAdoc","container_offload_flag":"Y","container_offload_date":"23/12/2017","container_offload_doc_name":"COdoc","bunkering_ready_flag":"Y","bunkering_ready_date":"24/12/2017","bunkering_ready_doc_name":"BRdoc","bunkering_complete_flag":"Y","bunkering_complete_date":"25/12/2017","bunkering_complete_doc_name":"BCdoc","customer_handover_flag":"Y","customer_handover_date":"26/12/2017","customer_handover_doc_name":"cus1Hnddoc","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"tr1","supplier_id":"sup1","updated_by":"sup1","last_update_date":"19/12/2017"},{"shipment_id":"SH2","status":"New","supplier_load_flag":"N","supplier_load_date":"NA","supplier_supporting_doc_name":"NA","supplier_load_quantity":"NA","container_arrival_flag":"N","container_arrival_date":"NA","container_arrival_doc_name":"NA","load_to_ship_flag":"N","container_load_date":"NA","container_load_doc_name":"NA","ship_arrival_flag":"N","ship_arrival_date":"NA","ship_arrival_doc_name":"NA","container_offload_flag":"N","container_offload_date":"NA","container_offload_doc_name":"NA","bunkering_ready_flag":"N","bunkering_ready_date":"NA","bunkering_ready_doc_name":"NA","bunkering_complete_flag":"N","bunkering_complete_date":"NA","bunkering_complete_doc_name":"NA","customer_handover_flag":"N","customer_handover_date":"NA","customer_handover_doc_name":"NA","customer_quantity":"500","ctid":"CT1","drid":"DR1","customer_id":"cus1","transporter_id":"","supplier_id":"","updated_by":"uni1","last_update_date":"18/12/2017"}]
+
+Fetched shipment by DRID
+
+
+deleting a Shipment
+
+Transacton ID is 87d84340cb0d9c9e89e71375c2f9b44575892ba2225e9b8a569ffa7a76bc3aa8
+
+deleted the Shipment
+
+GET query chaincode on peer1 of Org1
+Fetching a deleted Shipment
+Error: chaincode error (status: 500, message: {"Error":"shipment does not exist: SH2"})
+Fetched the deleted Shipment 
+
+Total execution time : 34 secs ...
