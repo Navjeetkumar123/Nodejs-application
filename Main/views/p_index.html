@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>CM_UI_02</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <!-- CSS Libs-->
+    <link rel="stylesheet" type="text/css" href="resources/lib/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="resources/lib/css/checkbox3.min.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="resources/lib/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS App-->
+    <!-- link(rel='stylesheet', type='text/css', href='resources/css/style.css')-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+   <!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <script type="text/javascript" src="js/angular/angular.js">
+    </script>
+    <script type="text/javascript" src="js/angular/angular-route.js">
+    </script>
+   <!-- <link href="https://gitcdn.github.io/angular-bootstrap-toggle/{version}/dist/angular-bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/{version}/dist/angular-bootstrap-toggle.min.js"></script> -->
+    <script type="text/javascript" src="js/app.js">
+    </script>
+    <script type="text/javascript" src="js/controllers.js">
+    </script>
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="resources/lib/js/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="resources/lib/js/bootstrap.min.js">
+    </script>
+    <script>
+    $(document).ready(function () {
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+
+  });
+});
+</script>
+   <style>
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+/*body {
+  padding-top: 51px;
+}*/
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 50%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .row-offcanvas-right.active {
+    
+  }
+
+}
+    .card-body{
+        background-color: lightcyan;
+    border: 1px solid black;
+   padding:50px;
+    
+    }
+.img-responsive{
+        border-radius: 100%;
+        }
+
+   
+    #sidebar{
+    	padding-left:0px;
+    	margin-top:-20px;
+    	
+    }
+
+   </style>
+    </head>
+    <body>
+   <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                          <font color="white"> <span style="font-size:25px;">{{dashboard}}</span></font>
+                   </li>
+                   </ul>
+                  
+                      <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           
+                <img src="resources/img/wipro1.jpg" class="img-responsive">
+                   </li>
+                   </ul>
+                </div>
+            </nav>
+
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-10 col-sm-push-2">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon"></i>
+          </button>
+         
+           <div ng-view>
+            
+      
+          </div>
+         
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-2 col-sm-pull-10 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="p_index#/p_home" class="list-group-item">Home</a>
+            <a href="p_index#/p_longboxAccount" class="list-group-item" class="list-group-item active">My Longbox Account</a>
+             <a href="p_index#/p_SegAcc" class="list-group-item">My Segregated Account</a>
+             <a href="p_index#/p_allocationHistory" class="list-group-item">Allocation History</a>
+             <a href="p_index#/p_myTransaction" class="list-group-item">My Transactions</a>
+            <a href="login" class="list-group-item">Logout</a>
+           
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <hr>
+
+      
+
+    </div><!--/.container-->
+    </body>
+</html>
+
